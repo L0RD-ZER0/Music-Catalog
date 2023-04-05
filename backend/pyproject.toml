@@ -1,0 +1,41 @@
+[project]
+name = "Music-Catalog"
+version = "0.0.0"
+authors = [
+    { name = "L0RD-ZER0", email = "68327382+L0RD-ZER0@users.noreply.github.com" },
+]
+license = { file = "../LICENSE" }
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.urls]
+homepage = "https://github.com/L0RD-ZER0/Music-Catalog"
+repository = "https://github.com/L0RD-ZER0/Music-Catalog"
+
+[tool.isort]
+profile = "black"
+extend_skip = [".gitignore", ".dockerignore", ".yaml"]
+line_length = 88
+# wrap_length = 88
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+no_lines_before = ["STDLIB", "LOCALFOLDER"]
+add_imports = ["from __future__ import annotations"]
+append_only = true
+src_paths = ["src"]
+combine_star = true
+combine_as_imports = true
+lines_between_sections = 1
+lines_after_imports = 2
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+skip-string-normalization = true
+
+[tool.mypy]
+disallow_untyped_defs = true
+check_untyped_defs = true
+allow_redefinition = true
+warn_return_any = true
+warn_unused_ignores = true
+show_error_codes = true

@@ -1,0 +1,16 @@
+# Env ignoring
+*.env
+*.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# VS Code Ignoring
+.vscode/
+
+# Jetbrains Ignoring
+.idea/
+
+# Misc Ignoring
